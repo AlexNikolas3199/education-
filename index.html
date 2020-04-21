@@ -28,6 +28,16 @@
 				</a>
 			</div>
 		</header>
+		<div class="mobHeader">
+			<div class="logo">
+				<img src="logo.png" alt="">
+			</div>
+			<div class="navbutton">
+				<div class="lan"></div>
+				<div class="lan"></div>
+				<div class="lan"></div>
+			</div>
+		</div>
 		<div class="mainContainer">
 			<div class="box">
 				<div class="wrapper">
@@ -199,6 +209,19 @@
 		</div>
 	</section>
 	<footer>
+		<p>ITsea</p>
 	</footer>
+	<script>
+		var navbtn = document.querySelector('.navbutton');
+		var header = document.querySelector('header');
+
+		navbtn.onclick = function(){
+			if (!header.classList.contains('up')) {
+				header.classList.add('up')
+			}else{
+				header.classList.remove('up')
+			}
+		}
+	</script>
 </body>
 </html>
