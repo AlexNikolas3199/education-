@@ -1,0 +1,487 @@
+@font-face {
+font-family: "Source Sans Pro";
+src:url("SourceSansPro-Regular.ttf");
+}
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color:#fff;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: "Source Sans Pro"
+}
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+main{
+	background: #3B3BA4;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+header .logo img{
+	width: 200px
+}
+header nav{
+	width: 560px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header nav a{
+	color:#fff;
+	font-size: 18px;
+	transition:0.3s ease-in-out
+}
+header nav a:hover{
+	color: #47DCC1;
+	transform: scale(1.1);
+}
+header .buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .buttons >a {
+	margin: 0 8px;
+	color:#fff;
+	border-radius: 23px;
+	font-size: 16px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	width: 190px;
+	height: 45px;
+	box-sizing: border-box;
+}
+header .buttons .signUp{
+	background: #47DCC1;
+}
+header .buttons .downloadApp{
+	border:solid 2px #fff;
+}
+.mainContainer{
+	padding-top:60px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items:normal;
+}
+.mainContainer .box{
+	position: relative;
+	width: 600px;	margin: 0 10px;
+}
+.mainContainer .box .wrapper{
+	position: relative;
+	padding: 30px 50px;
+}
+.mainContainer .box .wrapper > div{
+	position: relative;
+	padding: 25px 0 25px 40px;
+	background: rgba(37, 37, 128, 0.87);
+	border-radius: 30px
+}
+.mainContainer .box .wrapper:last-child > div{
+	padding: 35px 30px 35px 40px
+}
+.mainContainer .box .wrapper:last-child:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 20px;
+	width: 2px;
+	height: 100%;
+	background: #47DCC1
+}
+.mainContainer .box .wrapper > div h1{
+	font-size: 26px;
+	font-weight: 100;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+.mainContainer .box .wrapper > div hr{
+	background: #47DCC1;
+	width: 127px;
+	height: 3px;
+	border:none;
+	border-radius:5px;
+	margin: 5px 0
+}
+.mainContainer .box .wrapper > div p{
+	font-size: 18px;
+	line-height: 25px
+}
+.mainContainer .box >img{
+	margin-top:30px;
+	width: 70%
+}
+.mainContainer .box:last-child{
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.mainContainer .box .counters{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 600px
+}
+.mainContainer .box .counters .counter{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 49%
+}
+.mainContainer .box .counters .counter img{
+	width: 30px
+}
+.mainContainer .box .counters .counter span{
+	margin-left: 15px;
+
+}
+.mainContainer .box .counters .counter span p{
+	font-size: 14px
+}
+main .wave,
+main .wave > img{
+	position: relative;
+	width: 100%;
+}
+main .wave > img{
+	transform:scale(1.005);
+}
+main .wave .downArrow{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+main .wave{
+	background:
+	linear-gradient(transparent 95%,#fff 95%)
+}
+main .wave .downArrow img{
+	width: 50px
+}
+section{
+	position: relative;
+	overflow-x: hidden;
+}
+.advantages > img{
+	position: absolute;
+	z-index: -1
+}
+.blin1{
+	top:0;
+	left: 0;
+	width: 15%;
+}
+.blin2{
+	bottom:0;
+	right: -30px;
+	width: 20%;
+}
+section h2{
+	text-align: center;
+	font-size: 20px;
+	color:#47DCC1;
+}
+.advantages .cards{
+	margin: 0 auto;
+	padding: 300px 0;
+	z-index: 10;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.advantages .cards .card{
+	margin-bottom: 100px;
+	margin-right: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.advantages .cards .card img{
+	width: 60px;
+	margin-top: 10px
+}
+.advantages .cards .card div{
+	margin-left: 20px;
+	border:4px solid #7572EE;
+	border-radius: 20px;
+	padding: 20px 40px 20px 20px;
+	width: 200px;
+	height: 180px;
+}
+.advantages .cards .card div h4{
+	font-size: 20px;
+	color: #47DCC1;
+}
+.advantages .cards .card div p{
+	color:#000;
+	font-size: 15px
+}
+article{
+	width: 100%;
+	height: 48vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+article > img{
+	object-fit: cover;
+	width: 50%;
+	height: 100%;
+}
+article .content{
+	background: #3B3BA4;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+article .content > div{
+	width: 67%;
+	height: 60%;
+}
+article .content > div h2{
+	font-size: 30px
+}
+article .content > div p{
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 20px;
+	opacity: 0.8
+}
+article .content > div ul{
+	padding: 30px 0 30px 30px;
+	list-style: none;
+}
+article .content > div ul li{
+	position: relative;
+	line-height: 20px;
+	margin:10px 0
+}
+article .content > div ul li:before{
+	content: '';
+	position: absolute;
+	top:5px;
+	left:-30px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff
+}
+
+article .content > div .link{
+	margin-top:30px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+article .content > div .link a{
+	text-decoration: underline;
+}
+.empty{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.empty img:first-child{
+	position: absolute;
+	bottom:30px;
+	left:30px;
+	width: 80px;
+}
+.empty img:nth-child(2){
+	position: absolute;
+	top:20px;
+	right: 20px;
+	height: 90%
+}
+.shema{
+	background: #141447;
+	width: 100%;
+	min-height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.shema img{
+	margin: 20px;
+	max-width: 600px
+}
+.video {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow:hidden;
+}
+.video img:first-child{
+	max-width: 700px;
+	margin: 10px 30px;
+	z-index: 10;
+}
+.blin{
+	position: absolute;
+}
+.blin3{
+	width: 40%;
+	top:-20px;
+	left:-50px;
+}
+.blin3{
+	width: 40%;
+	top:-20px;
+	left:-50px;
+}
+.blin4{
+	width: 10%;
+	bottom: -15%;
+	right: 0
+}
+.tok1{
+	position: absolute;
+	top:15px;
+	right: 50px;
+	width: 6%;
+	transform: rotate(60deg);
+}
+.logoSector{
+	width: 100%;
+	height: 120px;
+	background: #3B3BA4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logoSector img{
+	width: 250px
+}
+.blin5{
+	width: 28%;
+	top:0;
+	left: 0;
+	z-index: -1
+}
+.tok3{
+	width: 15%;
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+	z-index: -1
+}
+.reviews{
+	width: 100%;
+	min-height: 100vh;
+	padding-top:40px;
+	overflow:hidden;
+}
+.reviewcards{
+	width: 90%;
+	margin: 50px auto 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 10;
+}
+.reviewcards .reviewcard{
+	margin:0 40px 30px 40px;
+	padding:20px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 
+	0px 1px 10px rgba(0, 0, 0, 0.15);
+	width: 300px;
+	height: 160px;
+	color:#000;
+}
+.reviewcards .reviewcard > div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.reviewcards .reviewcard > div > img{
+	width: 70px;
+}
+.reviewcards .reviewcard > div span{
+	margin-left:20px;
+}
+.reviewcards .reviewcard > div span h5{
+	font-weight: bold;
+	font-size: 18px;
+	color:#000;
+}
+.reviewcards .reviewcard > div span p{
+	font-size: 15px;
+	color:#999;
+}
+.reviewcards .reviewcard > div span hr{
+	margin:20px;
+	width: 100px;
+	height: 1px;
+	border:none;
+	background: #C4C4C4;
+}
+.reviewcards .reviewcard > p{
+	font-size: 18px;
+	text-align: center;
+	color:#000;
+}
+.apps{
+	width: 100%;
+}
+.apps > div {
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.apps > div > img{
+	margin-top:20px;
+	width: 90px;
+}
+.apps > div > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.apps > div > div img{
+	width: 150px;
+	margin: 20px
+}
+footer{
+	background: url(footer.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 36.6vw
+}
